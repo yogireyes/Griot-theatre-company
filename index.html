@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Griot Theater</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo"> Griot Theater
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Our Actors</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Featured Shows</h1>
+
+      </div>
+    </header>
+
+    <main>
+    
+    <h1 style="font-size: 55px; text-align: center; padding: 20px;">April 2020</h1>
+
+      <!-- Classes -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/a-raisin-in-the-sun-theater-1.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>A raisin in the Sun</h4>
+              <h2>April 6th, 2020 - March 12, 2021</h2>
+              <p>Griot Theater</p>
+              <p>$75</p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/a-raisin-in-the-sun-theater-1.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+              <h4>A raisin in the Sun</h4>
+              <h2>April 6th, 2020 - March 12, 2021</h2>
+              <p>Griot Theater</p>
+              <a href="#" class="btn btn-outline"> Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/a-raisin-in-the-sun-theater-1.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>A raisin in the Sun</h4>
+              <h2>April 6th, 2020 - March 12, 2021</h2>
+              <p>Griot Theater</p>
+              <p>$75</p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/a-raisin-in-the-sun-theater-1.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+              <h4>A raisin in the Sun</h4>
+              <h2>April 6th, 2020 - March 12, 2021</h2>
+              <p>Griot Theater</p>
+              <a href="#" class="btn btn-outline"> Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ 
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Il24RrLJjdHtiBO83tYIVtOdawE&hl=en&ehbc=2E312F" width="320" height="240"></iframe>
+            <h3>Info</h3>
+            <a href="#">Chicago Il, 60618 United States</a>
+            <a href="#">example@example.com</a>
+            <a href="#">Call us at: 888-888-9090</a>
+          </div>
+        
+        <div class="social">
+            <h3>Shows</h3>
+            <a href="#">Piano Lesson</a>
+            <a href="#">A Raisin in the Sun</a>
+            <a href="#">Fame</a>
+            <a href="#">The Color Purple</a>
+          </div>
+          
+      <div class="social">
+        <h3>Social</h3>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+
+
+    </script>
+  </body>
+</html>
